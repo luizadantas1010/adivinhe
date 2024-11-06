@@ -1,0 +1,260 @@
+/* importe atraves do site google fontes as seguintes fontes */
+@import url('https://lh3.googleusercontent.com/proxy/KKbzUes5Xa8qSttflMzWTiicSGn3kQ-W23ZKiESjREtkCv9YPfkn-87JxxXi3Xua4q3I6zCUwZ5AYPWaxaP26Si2yAEc96wmgktzsX-IZujzL-FX5De98txW20sOFF2hf_8I');
+
+/*font-family: "Asap", sans-serif; 
+font-family: "Nunito", sans-serif;
+font-family: "Roboto", sans-serif; 
+font-family: "Yellowtail", cursive;
+*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css');
+
+*{
+    /* coloque a propriedade margin com o valor 0 */
+    margin: 0;
+    /* coloque a propriedade padding com o valor 0 */
+    padding: 0;
+    /* coloque a propriedade box-sizing com o valor de border-box */
+    box-sizing: border-box;
+    /* coloque a propriedade text-decoration com o valor none */
+    text-decoration: none;
+    /* coloque a propriedade list-style com o valor none */
+    list-style: none;
+}
+
+html{
+    /* coloque a propriedade scroll-behavior com o valor smooth */
+    scroll-behavior: smooth;
+}
+
+body{
+    /* coloque a familia de fonte 'Roboto' importada do google fonts anteriormente */
+    font-family: "Roboto", sans-serif;
+    /* mude a cor do texto para o valor #1c1c1c */
+    color: #1c1c1c;
+}
+
+h1,h2,h3{
+    /* coloque a familia de fonte 'Asap' importada do google fonts anteriormente */
+    font-family: "Asap", sans-serif;
+    /* mude a cor do texto para o valor #c5b20b */
+    color: #c5b20b;
+    /* alinhe o texto ao centro */
+    text-align: center;
+    /* crie um espaçamento top DENTRO dos elementos COM VALOR DE 4% */
+    margin-top: 4%;
+}
+
+p{
+    /* adicione um espaçamento (padding) dentro da caixa de 2% */
+    padding: 2%;
+    text-indent: 1.8rem;
+}
+
+/* HEADER */
+/* crie e estilize o elemento header com uma altura (height) de 100vh */
+header{
+    height: 100vh;
+}
+
+/* nav */
+header nav{
+    background-color: transparent;
+    /* coloque a propiedade display com o valor flex */
+    display: flex;
+    /* alinhe os itens no centro */
+    align-items: center;
+    /* justifique o conteudo com valor space-between */
+    justify-content: space-between;
+    padding: 0.1rem;
+    position: fixed;
+    /* de uma largura (width) de 100% do elemento */
+    width: 100%;
+}
+
+nav #logo{
+    /* de uma largura de 4rem no elemento */
+    width: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+nav #logo img{
+    /* de uma largura (width) de 100% no elemento */
+    width: 100%;
+}
+
+nav ul{
+    /* de uma largura e altura de 70% no elemento*/
+    width: 70%;
+    height: 70%;
+    /* coloque a propriedade display com valor flex e alinhe os itens ao centro e justifique o conteudo com o valor space-between */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    /* mude a cor para aliceblue */
+    color: aliceblue;
+    /* de um peso na fonte(font-weight) com o valor de 500 */
+    font-weight: 500;
+    /* crie uma sombra no texto (text-shadow) com o valor de 1px 1px 4px #000 */
+    text-shadow: 1px 1px 4px #000;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid;
+    color: #6541da;
+    text-shadow: 1px 1px 4px #fff;
+    transition: all .8s;
+}
+
+.close,
+.hamburguer{
+    /* mude a cor para branco em hexadecimal  */
+    color: #fff;
+    /* aumente o tamanho da fonte para 1.5rem */
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* TELAS MENORES menu */
+@media(max-width:768px){
+    .hamburguer{
+        display: block;
+    }
+    .show{
+        left:0
+    }
+    ul{
+        background-color: #19197079;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 40vw !important;
+
+        flex-direction: column;
+        justify-content: space-around !important;
+    }
+}
+
+/* banner */
+header .banner {
+    height: 100%;
+    background: url('https://focalizando.com.br/sites/default/files/2023-01/10-apps-que-vao-deixar-suas-fotos-top.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    flex-direction: column;
+    padding: 1.25rem;
+    row-gap: 4rem;
+}
+
+.banner h1,
+h2{
+    text-shadow: 2px 2px #6541da;
+    font-size: 2.5rem;
+}
+
+.banner p{
+    font-size: 1.2rem;
+}
+
+.botao{
+    background: #191970;
+    color: #fff;
+    padding: .8rem 1.8rem;
+    font-size: .8rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px;
+}
+
+/* SOBRE */
+#sobre{
+    background: linear-gradient(120deg, #5f5fda9f, #191970),
+    url('https://dhg1h5j42swfq.cloudfront.net/2019/06/17205427/racismo.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.botao_destaque{
+    background: #6541da;
+    box-shadow: 2px 2px #c5b20b;
+}
+
+#sobre p{
+    color: #fff;
+    background-color: #0000008f;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SERVIÇOS */
+#servicos{
+    background: linear-gradient(120deg, #0000008b, #000), url('https://assets-blog.pagseguro.uol.com.br/wp-content/2022/01/Entenda-o-que-e-um-Contrato-de-Prestacao-de-Servicos.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem;
+}
+
+#conteudos_servicos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+#conteudos_servicos div{
+    width: 45%;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+#conteudos_servicos img{
+    width: 60px;
+}
+
+@media(max-width:500px){
+    #conteudos_servicos div{
+        width: 100%;
+    }
+}
+
+/* FOTOS */
+#fotos{
+    background: linear-gradient(120deg, #0000008b, #000), url('https://static-cse.canva.com/blob/1173244/screen3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#fotos div{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#fotos img{
+    width: 350px;
+    height: 200px;
+    margin: 1rem;
+}
